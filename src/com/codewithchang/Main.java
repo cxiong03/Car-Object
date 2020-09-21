@@ -3,18 +3,16 @@ package com.codewithchang;
 public class Main {
 
     public static void main(String[] args) {
-	var vehicle = new Car();
-	vehicle.make = "Honda";
-	vehicle.model = "Accord";
-	vehicle.year = 2019;
-
-	System.out.println("This car is a " + vehicle.year + " " + vehicle.make + " " + vehicle.model);
+//        Vehicle toyota = new Vehicle("white", "Toyota", false);
+//        System.out.println(toyota);
+//        toyota.setColor("blue");
+//        System.out.println(toyota);
+//        System.out.println(toyota.getColor());
+//        Vehicle honda = new Vehicle("red", "Honda", true);
+//        System.out.println(honda);
+        Toyota myCar = new Toyota("Green", true, "Camry", "XSE", "V6", true, false);
+        System.out.println(myCar);
+        myCar.setColor("purple");
+        System.out.println(myCar.getColor());
     }
-}
-
-class Car
-{
-    public String make;
-    public String model;
-    public int year;
 }
